@@ -1,4 +1,9 @@
 # Omniauth::Onvedeo
+[![Gem Version](https://badge.fury.io/rb/omniauth-onvedeo.svg)](http://badge.fury.io/rb/omniauth-onvedeo)
+[![Build Status](https://travis-ci.org/onvedeo/omniauth-onvedeo.svg?branch=master)](https://travis-ci.org/onvedeo/omniauth-onvedeo)
+[![Dependency Status](https://gemnasium.com/onvedeo/omniauth-onvedeo.svg)](https://gemnasium.com/onvedeo/omniauth-onvedeo)
+[![Code Climate](https://codeclimate.com/github/onvedeo/omniauth-onvedeo/badges/gpa.svg)](https://codeclimate.com/github/onvedeo/omniauth-onvedeo)
+[![Coverage Status](https://coveralls.io/repos/onvedeo/omniauth-onvedeo/badge.svg?branch=master&service=github)](https://coveralls.io/github/onvedeo/omniauth-onvedeo?branch=master)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/omniauth/onvedeo`. To experiment with that code, run `bin/console` for an interactive prompt.
 
