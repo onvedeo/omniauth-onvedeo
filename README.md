@@ -5,9 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/onvedeo/omniauth-onvedeo/badges/gpa.svg)](https://codeclimate.com/github/onvedeo/omniauth-onvedeo)
 [![Coverage Status](https://coveralls.io/repos/onvedeo/omniauth-onvedeo/badge.svg?branch=master&service=github)](https://coveralls.io/github/onvedeo/omniauth-onvedeo?branch=master)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/omniauth/onvedeo`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Provides the Onvedeo strategy for OmniAuth.
 
 ## Installation
 
@@ -25,9 +23,24 @@ Or install it yourself as:
 
     $ gem install omniauth-onvedeo
 
-## Usage
+## Authentication Hash
 
-TODO: Write usage instructions here
+An example auth hash available in `request.env['omniauth.auth']`:
+```rb
+{
+  provider: 'onvedeo',
+  uid: 123456,
+  info: {
+    email: 'email@onvedeo.com',
+    name: 'John Doe',
+    first_name: 'John',
+    last_name: 'Doe',
+    role: 'user',
+    image: 'http://www.onvedeo.com/image.url',
+    description: 'User description'
+  }
+}
+```
 
 ## Development
 
@@ -37,7 +50,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/omniauth-onvedeo.
+Bug reports and pull requests are welcome on GitHub at https://github.com/onvedeo/omniauth-onvedeo.
 
 
 ## License
