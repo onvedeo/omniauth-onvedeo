@@ -9,9 +9,14 @@ RSpec.describe OmniAuth::Strategies::Onvedeo do
       name: 'Onvedeo User',
       first_name: 'Onvedeo',
       last_name: 'User',
+      phone: '555-555-5555',
       role: 'user',
       image: 'https://www.onvedeo.com/image.jpg',
-      description: 'Description'
+      company_logo: 'http://www.onvedeo.com/logo.jpg',
+      company_name: 'Onvedeo',
+      description: 'Description',
+      bre_number: 'BRE1234',
+      mls_agent_id: 'ML1234'
     }
   end
 
@@ -40,7 +45,7 @@ RSpec.describe OmniAuth::Strategies::Onvedeo do
       allow(subject).to receive(:raw_info).and_return(raw_info_hash)
     end
 
-    %w(id email name first_name last_name role image description).each do |attr|
+    %w(id email name first_name last_name role phone image company_logo company_name description bre_number mls_agent_id).each do |attr|
       it "returns #{attr}" do
         expect(subject.info[attr.to_sym]).to eq(raw_info_hash[attr])
       end

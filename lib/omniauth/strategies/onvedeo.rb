@@ -19,8 +19,13 @@ module OmniAuth
           first_name: raw_info['first_name'],
           last_name: raw_info['last_name'],
           role: raw_info['role'],
+          phone: raw_info['phone'],
           image: raw_info['image'],
-          description: raw_info['description']
+          company_logo: raw_info['company_logo'],
+          company_name: raw_info['company_name'],
+          description: raw_info['description'],
+          bre_number: raw_info['bre_number'],
+          mls_agent_id: raw_info['mls_agent_id']
         }
       end
 
