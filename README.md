@@ -36,8 +36,13 @@ An example auth hash available in `request.env['omniauth.auth']`:
     first_name: 'John',
     last_name: 'Doe',
     role: 'user',
+    phone: '555-555-5555',
     image: 'http://www.onvedeo.com/image.url',
+    company_logo: 'http://www.onvedeo.com/logo.jpg',
+    company_name: 'Onvedeo',
     description: 'User description'
+    bre_number: 'BRE1234',
+    mls_agent_id: 'ML1234'
   }
 }
 ```
